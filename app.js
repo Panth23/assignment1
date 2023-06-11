@@ -1,7 +1,5 @@
 const createError = require('http-errors');
 const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 const express = require('express');
 const app = express();
 const port = 3000;
