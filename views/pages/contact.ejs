@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+  
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contact Me</h1>
+      <p>
+        Contact:-panth23patel@gmail.com
+      </p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-container">
+        <p>&copy; 2023 PANTH PATEL. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

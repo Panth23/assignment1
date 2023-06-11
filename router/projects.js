@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send('Projects Page');
-});
+const {getAboutPage,getProjectPage,getServicePage,getContactPage } = require('../controllers/projects.controller')
 
-router.get('/details', (req, res) => {
-    res.send('Project Details Page');
-});
-
+router.get('/about', getAboutPage);
+router.get('/projects',getProjectPage);
+router.get('/services',getServicePage);
+router.get('/contact',getContactPage);
 module.exports = router;
